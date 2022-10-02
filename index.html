@@ -106,6 +106,7 @@
     <main>
       <section id="score-area">
         <button class="primary" id="start">Start</button>
+        <button class="primary" onClick="reload()" id="reset">Reset<button>
         <span id="score">Score:<span>0</span></span>
       </section>
       <!-- Play area -->
@@ -198,6 +199,9 @@
           grounds[random].classList.add("active");
         }, 500);
       };
+      function reload(e){
+        window.location.reload();
+      }
     </script>
   </body>
 </html>
